@@ -3,7 +3,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 // ポート番号を指定する
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 80;
 
 // Express 4 以降（npm install morgan しておく）
 var morgan = require('morgan');
