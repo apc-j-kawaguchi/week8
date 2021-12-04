@@ -14,10 +14,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/chat.html');
 });
 
-app.get('/howto', function(req, res){
-  res.sendFile(__dirname + '/howto/new.html');
-});
-
 // httpサーバーを立てる
 http.listen(port, function(){
   console.log('listening on *:' + port);
